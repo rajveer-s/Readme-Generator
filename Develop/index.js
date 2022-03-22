@@ -5,8 +5,20 @@ import generateMarkdown from './utils/generateMarkdown';
 
 
 // TODO: Create an array of questions for user input
-const questions = [];
-
+const questions = () => {
+  return inquirer.prompt([
+    {
+      message: 'What is the title of your Project ?',
+      name: 'title',
+    },
+    {
+      message: 'What license would you like to choose ?',
+      choices: ['The MIT License', 'Apache 2.0 License', 'GNU GPL v3', 'None'],
+      name: 'license',
+      type: 'list',
+    },
+  ])
+}
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
