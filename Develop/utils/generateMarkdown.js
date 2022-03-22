@@ -51,7 +51,50 @@ function renderLicenseSection(license) {
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+
+  ## ${renderLicenseSection(data.license)}
+
+---
+
+  ## Description
+  ### ${data.description}
+
+  ## Table of Contents:
+  - [Description](#description)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+- [Questions?](#questions)
+
+## Technologies Used:
+${data.technologiesUsed}
+
+## Installation:
+
+${data.installation}
+
+
+## Usage:
+${data.usage}
+
+
+## Contributing:
+${data.contributing}
+
+## Tests:
+${data.tests}
+
+## Questions?
+If you have any additional questions, please reach me at ${data.questions}
+
+OR
+<br />
+
+[Github](https://www.github.com/${data.githubusername})
 
 `;
 }
