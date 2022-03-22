@@ -1,6 +1,6 @@
-import fs from 'fs';
-import inquirer from 'inquirer';
-import generateMarkdown from './utils/generateMarkdown';
+const fs = require('fs');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown')
 
 
 const questions = () => {
@@ -53,7 +53,7 @@ const questions = () => {
 }
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
-  err ? console.log(err) : console.log('Generating your README File...'))
+    err ? console.log(err) : console.log('Generating your README File...'))
 }
 
 function init() {
