@@ -25,6 +25,30 @@ const questions = () => {
       message: 'What technologies were used in this project',
       name: 'technologiesUsed',
     },
+    {
+      message: 'Does the user need to install anything ?',
+      name: 'installation',
+    },
+    {
+      message: 'Is there is any usage guide to be followed ?',
+      name: 'usage',
+    },
+    {
+      message: 'Is there any guidelines for contributing ?',
+      name: 'contributing',
+    },
+    {
+      message: 'Are there any tests for your project ?',
+      name: 'tests',
+    },
+    {
+      message: 'Please provide your Github username',
+      name: 'githubusername',
+    },
+    {
+      message: 'What is the best way to contact your if the user has any questions ?',
+      name: 'questions',
+    }
   ])
 }
 // TODO: Create a function to write README file
