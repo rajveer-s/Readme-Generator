@@ -49,7 +49,9 @@ const questions = () => {
       message: 'What is the best way to contact your if the user has any questions ?',
       name: 'questions',
     }
-  ])
+  ]).then((data) => {
+    writeToFile('UsersREADME.md', generateMarkdown(data));
+  })
 }
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
