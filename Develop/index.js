@@ -17,6 +17,14 @@ const questions = () => {
       name: 'license',
       type: 'list',
     },
+    {
+      message: 'Give your project a description. if any ...',
+      name: 'description',
+    },
+    {
+      message: 'What technologies were used in this project',
+      name: 'technologiesUsed',
+    },
   ])
 }
 // TODO: Create a function to write README file
