@@ -15,7 +15,21 @@ function renderLicenseBadge(license) {
 }
 
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'The MIT License') {
+    return `https://opensource.org/licenses/MIT
+    `
+
+  } else if (license === 'Apache 2.0 License') {
+    return `https://opensource.org/licenses/Apache-2.0
+    `
+  } else if (license === 'GNU GPL v3') {
+    return `https://www.gnu.org/licenses/gpl-3.0
+    `
+  } else {
+    return '';
+  }
+}
 
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
