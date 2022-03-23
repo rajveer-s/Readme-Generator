@@ -51,11 +51,12 @@ const questions = () => {
     writeToFile('UsersREADME.md', generateMarkdown(data));
   })
 }
+// function to thorw data into md file or an error 
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log('Generating your README File...'))
 }
-
+// what gets loaded when the app starts 
 function init() {
   questions();
 }
