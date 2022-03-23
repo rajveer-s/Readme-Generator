@@ -7,7 +7,7 @@
 ---
 
   ## Description
-  Readme Generator makes a developers job so much easier. There are some things that you dont need tio create such as a README file for your application. You can quickly and easily create a README file by using a command-line application to generate one. This allows the developers to save time.
+  Readme Generator makes a developers job so much easier. There are some things that you dont need to re-create from scratch every time you start a new project such as a README file for your application. You can quickly and easily create a README file by using a command-line application to generate one. This allows the developers to save time.
 
   ---
 
