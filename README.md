@@ -35,6 +35,9 @@ node index.js
 ```
 
 ---
+## Video: 
+
+https://user-images.githubusercontent.com/61525848/159622759-d30585eb-551c-4a55-8fdd-db723de7a258.mp4
 
 ## User Story
 
